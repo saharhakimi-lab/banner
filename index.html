@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>מעצבים באנר דיגיטלי | שלב הביצוע</title>
+<title>תוצר 3 | עיצוב באנר לרשתות חברתיות</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700;800;900&family=Assistant:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -14,230 +14,140 @@
     50% { box-shadow: 0 0 0 14px rgba(91, 95, 239, 0); }
   }
   .tuvia-fab { animation: tuvia-glow 2.2s infinite; }
-  .station { scroll-margin-top: 20px; }
-  input[type="radio"] { display: none; }
-  .swatch-label { cursor: pointer; transition: transform .15s ease, box-shadow .15s ease; }
-  input[type="radio"]:checked + .swatch-label { box-shadow: 0 0 0 3px #fff, 0 0 0 6px currentColor; transform: translateY(-2px); }
-  textarea, input[type="text"] {
-    font-family: 'Assistant', sans-serif;
-  }
 </style>
 </head>
 <body class="min-h-screen pb-20">
 
-  <!-- Toviya Bot Floating Button -->
-  <a href="https://gemini.google.com/gem/1gi-CMp_j75hFfWkIc2kc1oHqNYeN7xKH?usp=sharing" target="_blank" rel="noopener"
+  <a href="https://gemini.google.com/gem/182jqjh6fxGeiMJ3R2si6dovgXIugR93N?usp=sharing" target="_blank" rel="noopener"
      class="tuvia-fab fixed bottom-6 left-6 z-50 flex items-center gap-3 bg-gradient-to-r from-indigo-600 to-fuchsia-600 hover:from-indigo-500 hover:to-fuchsia-500 text-white font-bold px-5 py-4 rounded-full shadow-2xl transition duration-300 transform hover:scale-105">
     <span class="text-2xl">🤖</span>
-    <span class="text-sm md:text-base">תקוע/ה? דבר עם טוביה - הבוט שמלווה אותך במשימה</span>
+    <span class="text-sm md:text-base">הסתבכת עם קומפוזיציה רחבה? שאל את טוביה</span>
   </a>
 
-  <!-- HERO -->
   <header class="max-w-4xl mx-auto px-5 pt-10 pb-6">
     <div class="flex flex-wrap items-center justify-between gap-4 mb-8">
-      <span class="display font-black text-sm px-4 py-1.5 rounded-full bg-white shadow-sm border border-indigo-100 text-indigo-600">מגמת יישומים גרפיים · כיתה י' · עיצוב באנר דיגיטלי</span>
-      <a href="https://gemini.google.com/gem/1gi-CMp_j75hFfWkIc2kc1oHqNYeN7xKH?usp=sharing" target="_blank" rel="noopener"
+      <span class="display font-black text-sm px-4 py-1.5 rounded-full bg-white shadow-sm border border-indigo-100 text-indigo-600">מגמת יישומים גרפיים · כיתה י' · תוצר 3</span>
+      <a href="https://gemini.google.com/gem/182jqjh6fxGeiMJ3R2si6dovgXIugR93N?usp=sharing" target="_blank" rel="noopener"
          class="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-600 to-fuchsia-600 hover:from-indigo-500 hover:to-fuchsia-500 text-white font-black px-5 py-2.5 rounded-full shadow-lg transition-all transform hover:scale-105">
-        <span>🤖</span><span>שאל את טוביה</span>
+        <span>🤖</span><span>התייעץ עם טוביה על קומפוזיציה</span>
       </a>
     </div>
-    <h1 class="display font-black text-4xl sm:text-5xl leading-tight mb-4">יוצרים <span class="text-indigo-600">באנר דיגיטלי מפחיד</span> למותג שלך</h1>
+    
+    <div class="flex items-center gap-4 mb-3">
+      <span class="text-4xl">🖥️</span>
+      <h1 class="display font-black text-4xl sm:text-5xl leading-tight">מעצבים <span class="text-indigo-600">באנר רוחבי</span></h1>
+    </div>
     <p class="text-lg text-stone-700 font-semibold max-w-2xl">
-      אחרי הלוגו והפוסטר, הגיע הזמן לכבוש את המסכים! במשימה הזו נלמד איך לתרגם את השפה החזותית של החברה שלך לקומפוזיציה רוחבית של **באנר לאתר או לרשתות החברתיות**. נעבור <strong>6 תחנות אסטרטגיות</strong>, נתאים את הגדלים, ובסוף נעדכן את הכל במסמך הראשי של מטלת הביצוע!
+      האתגר הגדול בעיצוב באנר הוא הפורמט הרוחבי והצר שלו. בניגוד לכרזה אנכית, כאן אנחנו צריכים לספר סיפור ולמשוך את העין כשהאלמנטים פרוסים מצד לצד. באנר משמש כעיצוב עליון לאתרים, לעמודי פייסבוק, יוטיוב או כפרסומת רוחבית בדיגיטל.
     </p>
   </header>
 
-  <!-- PROGRESS -->
-  <div class="max-w-4xl mx-auto px-5 mb-8 flex gap-2" id="progress-dots">
-    <div class="h-2 flex-1 rounded-full bg-rose-200" data-dot="1"></div>
-    <div class="h-2 flex-1 rounded-full bg-amber-200" data-dot="2"></div>
-    <div class="h-2 flex-1 rounded-full bg-teal-200" data-dot="3"></div>
-    <div class="h-2 flex-1 rounded-full bg-indigo-200" data-dot="4"></div>
-    <div class="h-2 flex-1 rounded-full bg-fuchsia-200" data-dot="5"></div>
-    <div class="h-2 flex-1 rounded-full bg-emerald-200" data-dot="6"></div>
-  </div>
-
   <main class="max-w-4xl mx-auto px-5 space-y-8">
+    
+    <section class="bg-white rounded-3xl p-6 sm:p-8 shadow-md border-r-8 border-amber-400">
+      <span class="display font-black text-xs text-amber-500 uppercase tracking-wider">שלב 1: הגדרות קובץ ומידות</span>
+      <h2 class="display font-black text-2xl mt-1 mb-4">איך פותחים את הפרויקט בתוכנה?</h2>
+      
+      <p class="text-stone-600 mb-4 font-medium">
+        מכיוון שבאנר מיועד בעיקר למסכים דיגיטליים, אלו ההגדרות המדויקות שאתם צריכים להזין בפוטושופ או באילוסטרייטור:
+      </p>
 
-    <!-- STATION 1 -->
-    <section class="station bg-white rounded-3xl p-6 sm:p-8 shadow-md border-r-8 border-rose-400">
-      <span class="display font-black text-xs text-rose-500">תחנה 1</span>
-      <h2 class="display font-black text-2xl mt-1 mb-3">מטרת הבאנר והנעה לפעולה (CTA)</h2>
-      <p class="text-stone-700 font-semibold mb-4">בניגוד לפוסטר, באנר דיגיטלי חייב לגרום למשתמש ללחוץ עליו או להגיב אליו מיד. מהו כפתור ההנעה לפעולה הדיגיטלי שלכם (למשל: "הירשמו עכשיו", "לקנייה", "גלו עוד")?</p>
-      <textarea data-field="interests" rows="3" placeholder="כתוב כאן מה המטרה השיווקית של הבאנר, ומהו משפט ה-Call To Action המדויק שיניע את הגולשים לפעולה..."
-        class="w-full rounded-xl border-2 border-rose-100 focus:border-rose-400 outline-hidden p-4 font-semibold text-stone-800"></textarea>
-    </section>
-
-    <!-- STATION 2 -->
-    <section class="station bg-white rounded-3xl p-6 sm:p-8 shadow-md border-r-8 border-amber-400">
-      <span class="display font-black text-xs text-amber-500">תחנה 2</span>
-      <h2 class="display font-black text-2xl mt-1 mb-3">בחירת מידות ופורמט דיגיטלי</h2>
-      <p class="text-stone-700 font-semibold mb-4">איפה הבאנר הולך להתפרסם? הפורמט קובע את מרחב התמרון הטיפוגרפי שלכם.</p>
-      <div class="grid sm:grid-cols-2 gap-3" data-radio-group="direction">
-        <div><input type="radio" name="direction" id="d1" value="באנר רוחבי קלאסי לאתר (Hero Banner 1920x1080)"><label for="d1" class="swatch-label block p-4 rounded-xl border-2 border-amber-100 text-amber-700 font-bold text-sm">🖥️ רוחבי לאתר (Hero)<br><span class="font-normal text-xs text-stone-500">פורמט רחב מושלם לראש עמוד הבית (1920x1080)</span></label></div>
-        <div><input type="radio" name="direction" id="d2" value="קאבר לעמוד פייסבוק / לינקדאין רשמי"><label for="d2" class="swatch-label block p-4 rounded-xl border-2 border-amber-100 text-amber-700 font-bold text-sm">👥 קאבר לרשתות חברתיות<br><span class="font-normal text-xs text-stone-500">תמונת נושא רשמית לעמוד העסקי של המותג</span></label></div>
-        <div><input type="radio" name="direction" id="d3" value="באנר ריבועי לפיד (Feed Post 1080x1080)"><label for="d3" class="swatch-label block p-4 rounded-xl border-2 border-amber-100 text-amber-700 font-bold text-sm">📱 ריבועי לפיד (Instagram/FB)<br><span class="font-normal text-xs text-stone-500">קומפוזיציה ריבועית קומפקטית וממוקדת (1080x1080)</span></label></div>
-        <div><input type="radio" name="direction" id="d4" value="סטורי אנכי מוארך (Story / Reels 1080x1920)"><label for="d4" class="swatch-label block p-4 rounded-xl border-2 border-amber-100 text-amber-700 font-bold text-sm">📐 אנכי צר (Story / Vertical)<br><span class="font-normal text-xs text-stone-500">פורמט מובייל מלא וגבוה במיוחד (1080x1920)</span></label></div>
-      </div>
-    </section>
-
-    <!-- STATION 3 -->
-    <section class="station bg-white rounded-3xl p-6 sm:p-8 shadow-md border-r-8 border-teal-400">
-      <span class="display font-black text-xs text-teal-500">תחנה 3</span>
-      <h2 class="display font-black text-2xl mt-1 mb-3">תכנון כפתור הלחיצה והלוגו</h2>
-      <p class="text-stone-700 font-semibold mb-4">בבאנר, הלוגו והכפתור הווירטואלי הם האלמנטים החשובים ביותר. איפה נמקם אותם כדי שהמשתמש לא יפספס אותם בזמן גלילה מהירה?</p>
-      <div class="grid sm:grid-cols-2 gap-4">
-        <div>
-          <label class="text-xs font-black text-teal-600 mb-1 block">סגנון וצבע של כפתור ה-CTA</label>
-          <input type="text" data-field="brandName" placeholder="למשל: 'כפתור מעוגל בצבע ניאון בולט עם חץ'"
-            class="w-full rounded-xl border-2 border-teal-100 focus:border-teal-400 outline-hidden p-3 font-bold text-stone-800">
+      <div class="grid sm:grid-cols-3 gap-4 text-center">
+        <div class="border-2 border-amber-100 rounded-2xl p-4 bg-amber-50/30">
+          <span class="text-xs font-black text-amber-600 block mb-1">מידות מומלצות</span>
+          <span class="text-xl font-bold text-stone-800">1920x1080 px</span>
+          <span class="block text-xs text-stone-500 mt-1">או פורמט פייסבוק (1640x924)</span>
         </div>
-        <div>
-          <label class="text-xs font-black text-teal-600 mb-1 block">מיקום הלוגו ביחס לטקסט</label>
-          <input type="text" data-field="audience" placeholder="למשל: 'הלוגו בצד ימין, הטקסט והכפתור משמאל'"
-            class="w-full rounded-xl border-2 border-teal-100 focus:border-teal-400 outline-hidden p-3 font-bold text-stone-800">
+        <div class="border-2 border-amber-100 rounded-2xl p-4 bg-amber-50/30">
+          <span class="text-xs font-black text-amber-600 block mb-1">רזולוציה</span>
+          <span class="text-xl font-bold text-stone-800">72 DPI</span>
+          <span class="block text-xs text-stone-500 mt-1">מתאים באופן מושלם למסכים</span>
+        </div>
+        <div class="border-2 border-amber-100 rounded-2xl p-4 bg-amber-50/30">
+          <span class="text-xs font-black text-amber-600 block mb-1">מודל צבע</span>
+          <span class="text-xl font-bold text-stone-800">RGB</span>
+          <span class="block text-xs text-stone-500 mt-1">חובה עבור תצוגה דיגיטלית</span>
         </div>
       </div>
     </section>
 
-    <!-- STATION 4 -->
-    <section class="station bg-white rounded-3xl p-6 sm:p-8 shadow-md border-r-8 border-indigo-400">
-      <span class="display font-black text-xs text-indigo-500">תחנה 4</span>
-      <h2 class="display font-black text-2xl mt-1 mb-3">חוקי קריאות במסכים (Readability)</h2>
-      <p class="text-stone-700 font-semibold mb-4">על צג המחשב או הנייד, אנשים לא קוראים – הם סורקים. איזה טיפול רקע יבטיח שהטקסט שלכם יישאר קריא ב-100%?</p>
-      <div class="grid sm:grid-cols-2 gap-3" data-radio-group="colorMood">
-        <div><input type="radio" name="colorMood" id="c1" value="שכבת החשכה חלקית (Gradient Overlay כהה מתחת לטקסט)"><label for="c1" class="swatch-label block p-4 rounded-xl border-2 border-indigo-100 font-bold text-sm text-stone-700" style="color:#E85D4C"><span class="inline-block w-4 h-4 rounded-full bg-linear-to-r from-red-500 to-amber-400 align-middle ml-1"></span> מעבר החשכה ממוקד<br><span class="font-normal text-xs text-stone-500">Gradient Overlay כהה מתחת לטקסט לבן</span></label></div>
-        <div><input type="radio" name="colorMood" id="c2" value="רקע שטוח ונקי לחלוטין ללא הסחות דעת ויזואליות"><label for="c2" class="swatch-label block p-4 rounded-xl border-2 border-indigo-100 font-bold text-sm text-stone-700" style="color:#4C6FE8"><span class="inline-block w-4 h-4 rounded-full bg-linear-to-r from-blue-500 to-teal-400 align-middle ml-1"></span> רקע וקטורי שטוח<br><span class="font-normal text-xs text-stone-500">צבע אחיד וחלק, הפרדה מושלמת לטקסט קשיח</span></label></div>
-        <div><input type="radio" name="colorMood" id="c3" value="שימוש בטקסטורה עדינה עם אפקט טשטוש (Blur / Glassmorphism)"><label for="c3" class="swatch-label block p-4 rounded-xl border-2 border-indigo-100 font-bold text-sm text-stone-700" style="color:#4C8C4A"><span class="inline-block w-4 h-4 rounded-full bg-linear-to-r from-green-600 to-yellow-700 align-middle ml-1"></span> אפקט זכוכית מטושטשת<br><span class="font-normal text-xs text-stone-500">טשטוש עמוק של תמונת הרקע באזור המלל</span></label></div>
-        <div><input type="radio" name="colorMood" id="c4" value="קונטרסט טיפוגרפי קיצוני (פונט עבה במיוחד על רקע מנוגד)"><label for="c4" class="swatch-label block p-4 rounded-xl border-2 border-indigo-100 font-bold text-sm text-stone-700" style="color:#1B1B2F"><span class="inline-block w-4 h-4 rounded-full bg-linear-to-r from-stone-900 to-fuchsia-500 align-middle ml-1"></span> טיפוגרפיה דורסנית<br><span class="font-normal text-xs text-stone-500">גופן שמן וכבד שתופס את רוב שטח הבאנר</span></label></div>
+    <section class="bg-white rounded-3xl p-6 sm:p-8 shadow-md border-r-8 border-indigo-500">
+      <span class="display font-black text-xs text-indigo-500 uppercase tracking-wider">שלב 2: סודות הקומפוזיציה הרוחבית</span>
+      <h2 class="display font-black text-2xl mt-1 mb-4">איך לסדר את האלמנטים נכון?</h2>
+      
+      <p class="text-stone-600 mb-6 font-medium">
+        בגלל שהעין זזה מימין לשמאל (בעברית), חשוב לתכנן את מיקום הטקסט והתמונה בצורה שלא תעמיס על הצופה:
+      </p>
+
+      <div class="grid sm:grid-cols-2 gap-6">
+        <div class="space-y-3">
+          <h3 class="font-bold text-stone-800 flex items-center gap-2">
+            <span class="bg-indigo-100 text-indigo-700 w-6 h-6 rounded-full inline-flex items-center justify-content-center text-xs font-bold">1</span>
+            צד אחד: ויז'ואל מרכזי חזק
+          </h3>
+          <p class="text-sm text-stone-600 font-medium">
+            מקמו את התמונה הראשית, הדמות, המוצר או האלמנט הגרפי הבולט שלכם באחד הצדדים (למשל שמאל). ודאו שהוא חתוך בצורה מקצועית ומסתלבט יפה עם הרקע.
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <h3 class="font-bold text-stone-800 flex items-center gap-2">
+            <span class="bg-indigo-100 text-indigo-700 w-6 h-6 rounded-full inline-flex items-center justify-content-center text-xs font-bold">2</span>
+            צד שני: הלוגו והכותרת
+          </h3>
+          <p class="text-sm text-stone-600 font-medium">
+            בצד הנגדי (למשל ימין), מקמו את שם החברה/הפרויקט, הלוגו, ומשפט מפתח קצר. אל תכתבו פסקאות שלמות! באנר צריך להעביר מסר בתוך 2 שניות מקסימום.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-6 bg-indigo-50 border border-indigo-100 rounded-2xl p-4 flex gap-3 items-center">
+        <span class="text-2xl">🤖</span>
+        <div class="text-sm text-indigo-900 font-medium">
+          <strong>צריכים רעיון לקומפוזיציה מיוחדת?</strong> לחצו על הבוט של טוביה וכתבו לו: 
+          <span class="block bg-white/80 p-2 rounded-lg mt-1 font-mono text-xs text-indigo-950">"אני מעצב באנר רוחבי לפרויקט שלי שעוסק ב[הנושא שלכם]. מה כדאי לי לשים ברקע ואיך כדאי לסדר את הלוגו והאלמנט המרכזי כדי שזה יראה מקצועי?"</span>
+        </div>
       </div>
     </section>
 
-    <!-- STATION 5 -->
-    <section class="station bg-white rounded-3xl p-6 sm:p-8 shadow-md border-r-8 border-fuchsia-400">
-      <span class="display font-black text-xs text-fuchsia-500">תחנה 5</span>
-      <h2 class="display font-black text-2xl mt-1 mb-3">התאמת הלוגו לקומפוזיציה של מסך</h2>
-      <p class="text-stone-700 font-semibold mb-4">בגלל המבנה הצר או הרוחבי של באנרים, לפעמים נצטרך להשתמש בגרסה מיוחדת של הלוגו שעיצבנו.</p>
-      <div class="grid sm:grid-cols-2 gap-3 mb-4" data-radio-group="logoType">
-        <div><input type="radio" name="logoType" id="l1" value="שימוש בלוגו בגרסתו הרוחבית (סמל לצד הטקסט)"><label for="l1" class="swatch-label block p-4 rounded-xl border-2 border-fuchsia-100 text-fuchsia-700 font-bold text-sm">↔️ לוגו במבנה רוחבי</label></div>
-        <div><input type="radio" name="logoType" id="l2" value="שימוש באייקון/סמל של הלוגו בלבד ללא שם המותג המלא"><label for="l2" class="swatch-label block p-4 rounded-xl border-2 border-fuchsia-100 text-fuchsia-700 font-bold text-sm">🟪 סמל/איקון בלבד (מינימליזם)</label></div>
-        <div><input type="radio" name="logoType" id="l3" value="מיקום הלוגו בתוך קוביה או פס עליון ייעודי (Header)"><label for="l3" class="swatch-label block p-4 rounded-xl border-2 border-fuchsia-100 text-fuchsia-700 font-bold text-sm">📑 בתוך סרגל עליון קבוע</label></div>
-        <div><input type="radio" name="logoType" id="l4" value="שילוב הלוגו בצורה אורגנית על גבי התמונה הראשית של הבאנר"><label for="l4" class="swatch-label block p-4 rounded-xl border-2 border-fuchsia-100 text-fuchsia-700 font-bold text-sm">📸 מוטמע ישירות על פני הויזואל</label></div>
-      </div>
-      <div class="grid sm:grid-cols-3 gap-3" data-radio-group="shapeFeel">
-        <div><input type="radio" name="shapeFeel" id="s1" value="באנר נקי ומינימליסטי מאוד"><label for="s1" class="swatch-label block p-3 rounded-xl border-2 border-fuchsia-100 text-fuchsia-700 font-bold text-sm text-center">🤍 נקי ויוקרתי</label></div>
-        <div><input type="radio" name="shapeFeel" id="s2" value="באנר עמוס, רועש ומלא באלמנטים וקטוריים"><label for="s2" class="swatch-label block p-3 rounded-xl border-2 border-fuchsia-100 text-fuchsia-700 font-bold text-sm text-center">💥 רועש ושיווקי</label></div>
-        <div><input type="radio" name="shapeFeel" id="s3" value="באנר אפל עם תאורות ניאון דיגיטליות"><label for="s3" class="swatch-label block p-3 rounded-xl border-2 border-fuchsia-100 text-fuchsia-700 font-bold text-sm text-center">🌌 דיגיטלי ואפל</label></div>
+    <section class="bg-white rounded-3xl p-6 sm:p-8 shadow-md border-r-8 border-fuchsia-500">
+      <span class="display font-black text-xs text-fuchsia-500 uppercase tracking-wider">שלב 3: אלמנטים שחייבים להופיע</span>
+      <h2 class="display font-black text-2xl mt-1 mb-4">מה הבאנר שלכם צריך לכלול?</h2>
+      
+      <div class="grid sm:grid-cols-2 gap-4 text-stone-700 font-medium">
+        <div class="p-4 border border-stone-100 rounded-xl bg-stone-50/50">
+          <span class="block text-fuchsia-600 font-bold mb-1">✓ הלוגו שלכם</span>
+          <p class="text-sm text-stone-500">בגרסה האיכותית ביותר שלו, משתלב בצורה נקייה בלי "ריבוע לבן" מסביב.</p>
+        </div>
+        <div class="p-4 border border-stone-100 rounded-xl bg-stone-50/50">
+          <span class="block text-fuchsia-600 font-bold mb-1">✓ סלוגן או משפט מניע</span>
+          <p class="text-sm text-stone-500">בין 3 ל-6 מילים שמסכמות את המהות של המותג או הקמפיין שלכם.</p>
+        </div>
+        <div class="p-4 border border-stone-100 rounded-xl bg-stone-50/50">
+          <span class="block text-fuchsia-600 font-bold mb-1">✓ צבעוניות אחידה</span>
+          <p class="text-sm text-stone-500">שימוש מדויק ב-2 או 3 צבעים מתוך פלטת הצבעים שקבעתם מראש למותג.</p>
+        </div>
+        <div class="p-4 border border-stone-100 rounded-xl bg-stone-50/50">
+          <span class="block text-fuchsia-600 font-bold mb-1">✓ כפתור דמה (אופציונלי)</span>
+          <p class="text-sm text-stone-500">אלמנט עיצובי שנראה כמו כפתור ("להרשמה", "לפרטים נוספים") כדי ליצור תחושת אינטראקטיביות.</p>
+        </div>
       </div>
     </section>
 
-    <!-- STATION 6 - SUMMARY -->
-    <section class="station bg-gradient-to-br from-indigo-600 to-fuchsia-600 rounded-3xl p-6 sm:p-8 shadow-xl text-white">
-      <span class="display font-black text-xs text-indigo-200">תחנה 6 · נעילה ועדכון במערכת</span>
-      <h2 class="display font-black text-2xl mt-1 mb-3">נעילת התוצר הדיגיטלי</h2>
-      <p class="font-semibold mb-4 text-indigo-100">סיימת לתכנן, לבחור ולעצב את הבאנר? עכשיו חובה לעדכן את התוצרים והבחירות שלך ישירות בתוך הפורטפוליו הרשמי שלך!</p>
-      <textarea id="summary-box" readonly rows="7"
-        class="w-full rounded-xl p-4 font-bold text-stone-800 bg-white/95 outline-hidden"></textarea>
-      <div class="flex flex-wrap gap-3 mt-4">
-        <button onclick="copySummary()" id="copy-btn"
-          class="bg-white text-indigo-700 font-black px-5 py-3 rounded-full shadow-md hover:scale-105 transition-transform">📋 העתק את סיכום הבאנר</button>
-        <a href="https://saharhakimi-lab.github.io/digital-studio/" target="_blank" rel="noopener"
-          class="bg-stone-900 hover:bg-stone-800 text-white font-black px-5 py-3 rounded-full shadow-md transition-colors flex items-center gap-2 animate-bounce">🚀 לחץ כאן לעדכון מסמך מטלת הביצוע הרשמי שלך</a>
+    <section class="bg-gradient-to-br from-indigo-600 to-fuchsia-600 rounded-3xl p-6 sm:p-8 shadow-xl text-white text-center">
+      <h2 class="display font-black text-2xl mb-2">סיימתם לעצב את הבאנר הרוחבי?</h2>
+      <p class="font-semibold text-indigo-100 mb-6 max-w-xl mx-auto">
+        ודאו ששמרתם את הקובץ פתוח בפורמט התוכנה (PSD או AI) וייצאתם גרסת תמונה סופית בפורמת PNG או JPG באיכות הגבוהה ביותר.
+      </p>
+      <div class="flex justify-center gap-4 flex-wrap">
+        <a href="https://gemini.google.com/gem/182jqjh6fxGeiMJ3R2si6dovgXIugR93N?usp=sharing" target="_blank" rel="noopener"
+           class="bg-white text-indigo-700 font-black px-6 py-3 rounded-full shadow-md hover:scale-105 transition-transform flex items-center gap-2">
+          <span>🤖</span> שאל את טוביה על שלב הייצוא
+        </a>
       </div>
     </section>
 
   </main>
 
-<script>
-  const fields = document.querySelectorAll('[data-field]');
-  const radioGroups = ['direction','colorMood','logoType','shapeFeel'];
-  const STORAGE_KEY = 'banner_mission_direction';
-
-  function getSelected(name) {
-    const el = document.querySelector(`input[name="${name}"]:checked`);
-    return el ? el.value : null;
-  }
-
-  function buildSummary() {
-    const interests = document.querySelector('[data-field="interests"]').value.trim();
-    const brandName = document.querySelector('[data-field="brandName"]').value.trim();
-    const audience = document.querySelector('[data-field="audience"]').value.trim();
-    const direction = getSelected('direction');
-    const colorMood = getSelected('colorMood');
-    const logoType = getSelected('logoType');
-    const shapeFeel = getSelected('shapeFeel');
-
-    let lines = [];
-    lines.push(`טוביה, אחוואן, הנה הבחירות הסופיות שלי לבאנר הדיגיטלי של המותג:`);
-    if (interests) lines.push(`• מטרה והנעה לפעולה (CTA): ${interests}`);
-    if (direction) lines.push(`• פורמט ומידות שנבחרו: ${direction}`);
-    if (brandName) lines.push(`• עיצוב וצבע כפתור הלחצן: ${brandName}`);
-    if (audience) lines.push(`• אסטרטגיית מיקום הלוגו בבאנר: ${audience}`);
-    if (colorMood) lines.push(`• פתרון קריאות המלל במסך: ${colorMood}`);
-    if (logoType) lines.push(`• גרסת הלוגו המותאמת למדיה: ${logoType}`);
-    if (shapeFeel) lines.push(`• סגנון ואווירה כללית של הבאנר: ${shapeFeel}`);
-    lines.push(`הכל מוכן! אני טס לעדכן את הפורטפוליו הראשי בלינק המצורף.`);
-
-    document.getElementById('summary-box').value = lines.join('\n');
-  }
-
-  function copySummary() {
-    const box = document.getElementById('summary-box');
-    box.select();
-    document.execCommand('copy');
-    const btn = document.getElementById('copy-btn');
-    const original = btn.textContent;
-    btn.textContent = '✔ הועתק, יא מלך!';
-    setTimeout(() => btn.textContent = original, 1800);
-  }
-
-  function save() {
-    const state = { fields: {}, radios: {} };
-    fields.forEach(f => state.fields[f.dataset.field] = f.value);
-    radioGroups.forEach(name => state.radios[name] = getSelected(name));
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
-    buildSummary();
-    updateProgress();
-  }
-
-  function updateProgress() {
-    const dots = document.querySelectorAll('[data-dot]');
-    const doneCount = [
-      document.querySelector('[data-field="interests"]').value.trim().length > 0,
-      !!getSelected('direction'),
-      document.querySelector('[data-field="brandName"]').value.trim().length > 0,
-      !!getSelected('colorMood'),
-      !!getSelected('logoType'),
-      true
-    ];
-    dots.forEach((d,i) => d.classList.toggle('opacity-40', !doneCount[i]));
-  }
-
-  function load() {
-    try {
-      const state = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
-      if (state.fields) {
-        Object.entries(state.fields).forEach(([key, val]) => {
-          const el = document.querySelector(`[data-field="${key}"]`);
-          if (el) el.value = val;
-        });
-      }
-      if (state.radios) {
-        Object.entries(state.radios).forEach(([name, val]) => {
-          if (!val) return;
-          const el = document.querySelector(`input[name="${name}"][value="${CSS.escape(val)}"]`);
-          if (el) el.checked = true;
-        });
-      }
-    } catch (e) {}
-  }
-
-  fields.forEach(f => f.addEventListener('input', save));
-  document.querySelectorAll('input[type="radio"]').forEach(r => r.addEventListener('change', save));
-
-  load();
-  buildSummary();
-  updateProgress();
-</script>
 </body>
 </html>
